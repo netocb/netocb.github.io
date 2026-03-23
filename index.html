@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Calixto Neto — Marketing Sênior | CRM, Dados & Estratégia</title>
+  <meta name="description" content="Profissional de marketing com 18+ anos de experiência em CRM, automação, mídia paga, geração de leads B2B e analytics. Baseado em Cuiabá, MT." />
+  <meta name="author" content="Calixto Neto" />
+  <link rel="canonical" href="https://calixtobneto.com.br/" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Calixto Neto — Marketing Sênior" />
+  <meta property="og:description" content="18+ anos em marketing digital, CRM, dados e geração de leads B2B." />
+  <meta property="og:url" content="https://calixtobneto.com.br/" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Calixto Neto — Marketing Sênior" />
+  <meta name="twitter:description" content="18+ anos em marketing digital, CRM, dados e geração de leads B2B." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Calixto Neto",
+    "jobTitle": "Analista Sênior de Marketing",
+    "description": "Profissional de marketing com 18+ anos de experiência em CRM, automação, mídia paga e analytics.",
+    "url": "https://calixtobneto.com.br/",
+    "email": "calixtobneto@gmail.com",
+    "sameAs": ["https://www.linkedin.com/in/calixtoneto/"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cuiabá",
+      "addressRegion": "MT",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0C1A2E;
+      --navy-md: #152540;
+      --blue:    #1A5CA8;
+      --blue-lt: #3B7DD8;
+      --blue-bg: #EBF2FA;
+      --blue-bd: #C2D9F0;
+      --gray-dk: #1F2D3D;
+      --gray-md: #5A6A7A;
+      --gray-lt: #96A3B0;
+      --gray-bg: #F4F6F9;
+      --white:   #FFFFFF;
+      --border:  #DDE3EA;
+      --serif:   'DM Serif Display', Georgia, serif;
+      --sans:    'DM Sans', system-ui, sans-serif;
+      --r:       8px;
+      --r-lg:    14px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--gray-dk);
+      background: var(--gray-bg);
+    }
+    a { color: inherit; text-decoration: none; }
+
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--navy);
+      border-bottom: 3px solid var(--blue);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .hd-in {
+      display: flex; align-items: center;
+      justify-content: space-between; height: 60px;
+    }
+    .logo {
+      font-family: var(--serif);
+      font-size: 19px; color: #fff;
+      letter-spacing: -.2px;
+    }
+    .logo span { color: #3B7DD8; }
+    nav { display: flex; gap: 4px; }
+    nav a {
+      font-size: 13px; font-weight: 500;
+      color: rgba(255,255,255,.65);
+      padding: 6px 14px; border-radius: var(--r);
+      transition: background .2s, color .2s;
+    }
+    nav a:hover { background: rgba(255,255,255,.1); color: #fff; }
+    .nav-cta {
+      background: var(--blue) !important;
+      color: #fff !important;
+      font-weight: 600 !important;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--navy);
+      padding: 72px 0 88px;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; top: 0; right: 0;
+      width: 55%; height: 100%;
+      background: radial-gradient(ellipse at 80% 40%, rgba(26,92,168,.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-in {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 64px; align-items: center;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--blue-lt); margin-bottom: 20px;
+    }
+    .hero-badge::before {
+      content: ''; display: block;
+      width: 24px; height: 2px;
+      background: var(--blue-lt);
+    }
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4.5vw, 50px);
+      font-weight: 400; line-height: 1.15;
+      color: #fff; margin-bottom: 8px;
+    }
+    .hero h1 em {
+      font-style: italic; color: var(--blue-lt);
+    }
+    .hero-sub {
+      font-size: 18px; font-weight: 300;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 24px; line-height: 1.5;
+    }
+    .hero-desc {
+      font-size: 15px; font-weight: 300;
+      color: rgba(255,255,255,.65);
+      line-height: 1.7; margin-bottom: 36px;
+      max-width: 540px;
+    }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--sans); font-size: 14px; font-weight: 600;
+      padding: 12px 24px; border-radius: var(--r);
+      border: none; cursor: pointer;
+      transition: transform .15s, opacity .15s;
+      text-decoration: none;
+    }
+    .btn:hover { transform: translateY(-1px); opacity: .92; }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-ghost {
+      background: transparent; color: rgba(255,255,255,.8);
+      border: 1.5px solid rgba(255,255,255,.25);
+    }
+
+    /* foto / avatar */
+    .hero-photo-wrap { display: flex; justify-content: center; }
+    .hero-photo {
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,.1);
+      background: var(--navy-md);
+      overflow: hidden;
+      display: flex; align-items: center; justify-content: center;
+      position: relative;
+    }
+    /* Substitua o .photo-placeholder por <img src="SUA_FOTO.jpg" alt="Calixto Neto"> */
+    .photo-placeholder {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 8px;
+      background: linear-gradient(145deg, #152540, #1A3A5C);
+    }
+    .photo-placeholder .initials {
+      font-family: var(--serif);
+      font-size: 64px; color: rgba(255,255,255,.3);
+      line-height: 1;
+    }
+    .photo-placeholder .hint {
+      font-size: 11px; color: rgba(255,255,255,.25);
+      text-align: center; padding: 0 20px; line-height: 1.4;
+    }
+
+    /* ── STATS ── */
+    .stats {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+    .stats-in {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      divide: 1px solid var(--border);
+    }
+    .stat {
+      padding: 28px 24px;
+      border-right: 1px solid var(--border);
+      text-align: center;
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-family: var(--serif);
+      font-size: 36px; color: var(--navy);
+      line-height: 1; margin-bottom: 6px;
+    }
+    .stat-num span { font-size: 22px; color: var(--blue); }
+    .stat-label {
+      font-size: 12px; font-weight: 500;
+      color: var(--gray-md);
+      text-transform: uppercase; letter-spacing: .06em;
+    }
+
+    /* ── SEÇÕES GERAIS ── */
+    section { padding: 72px 0; }
+    .sec-label {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--blue); margin-bottom: 10px;
+    }
+    .sec-title {
+      font-family: var(--serif);
+      font-size: 32px; font-weight: 400;
+      color: var(--navy); line-height: 1.2;
+      margin-bottom: 40px;
+    }
+
+    /* ── HABILIDADES ── */
+    .skills-bg { background: var(--white); }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .skill-card {
+      background: var(--gray-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      padding: 24px;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .skill-card:hover {
+      border-color: var(--blue-bd);
+      box-shadow: 0 4px 20px rgba(26,92,168,.08);
+    }
+    .skill-icon {
+      width: 40px; height: 40px;
+      border-radius: var(--r);
+      background: var(--blue-bg);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .skill-icon svg { width: 20px; height: 20px; }
+    .skill-card h3 {
+      font-size: 14px; font-weight: 600;
+      color: var(--navy); margin-bottom: 10px;
+    }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .stag {
+      font-size: 11px; font-weight: 500;
+      padding: 4px 10px; border-radius: 20px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      color: var(--gray-md);
+    }
+
+    /* ── FORMAÇÃO ── */
+    .edu-bg { background: var(--gray-bg); }
+    .edu-list { display: flex; flex-direction: column; gap: 20px; }
+    .edu-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--blue);
+      border-radius: 0 var(--r-lg) var(--r-lg) 0;
+      padding: 24px 28px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px; align-items: start;
+    }
+    .edu-degree {
+      font-family: var(--serif);
+      font-size: 17px; color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .edu-inst {
+      font-size: 14px; font-weight: 500;
+      color: var(--blue); margin-bottom: 4px;
+    }
+    .edu-desc { font-size: 13px; color: var(--gray-md); }
+    .edu-year {
+      font-size: 12px; font-weight: 600;
+      color: var(--gray-lt);
+      white-space: nowrap;
+      padding-top: 4px;
+    }
+
+    /* ── BLOG ── */
+    .blog-bg { background: var(--white); }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .blog-card {
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      background: var(--gray-bg);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .blog-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(12,26,46,.08);
+    }
+    .blog-img {
+      height: 160px; background: var(--blue-bg);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 12px; color: var(--blue-lt);
+      font-weight: 500;
+    }
+    /* Substitua .blog-img por <img src="..." alt="..."> */
+    .blog-body { padding: 20px; }
+    .blog-tag {
+      display: inline-block;
+      font-size: 10px; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 20px;
+      background: var(--blue-bg); color: var(--blue);
+      margin-bottom: 10px;
+    }
+    .blog-title {
+      font-family: var(--serif);
+      font-size: 16px; color: var(--navy);
+      line-height: 1.35; margin-bottom: 8px;
+    }
+    .blog-meta { font-size: 12px; color: var(--gray-lt); }
+    .blog-cta {
+      margin-top: 40px; text-align: center;
+    }
+
+    /* ── CONTATO ── */
+    .contact-bg { background: var(--navy); }
+    .contact-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px; align-items: start;
+    }
+    .contact-bg .sec-label { color: var(--blue-lt); }
+    .contact-bg .sec-title { color: #fff; margin-bottom: 16px; }
+    .contact-desc {
+      font-size: 15px; font-weight: 300;
+      color: rgba(255,255,255,.6);
+      line-height: 1.7; margin-bottom: 32px;
+    }
+    .contact-links { display: flex; flex-direction: column; gap: 14px; }
+    .contact-link {
+      display: flex; align-items: center; gap: 14px;
+      font-size: 14px; color: rgba(255,255,255,.75);
+      transition: color .2s;
+    }
+    .contact-link:hover { color: #fff; }
+    .contact-link .ico {
+      width: 40px; height: 40px;
+      border-radius: var(--r);
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.1);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-link .ico svg { width: 18px; height: 18px; }
+
+    /* formulário */
+    .contact-form { display: flex; flex-direction: column; gap: 14px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .contact-form input,
+    .contact-form textarea {
+      font-family: var(--sans);
+      font-size: 14px;
+      padding: 13px 16px;
+      background: rgba(255,255,255,.06);
+      border: 1.5px solid rgba(255,255,255,.12);
+      border-radius: var(--r);
+      color: #fff;
+      outline: none;
+      transition: border-color .2s;
+      resize: none;
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder { color: rgba(255,255,255,.3); }
+    .contact-form input:focus,
+    .contact-form textarea:focus { border-color: var(--blue-lt); }
+    .contact-form textarea { height: 120px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #060F1A;
+      padding: 28px 0;
+      border-top: 1px solid rgba(255,255,255,.06);
+    }
+    .footer-in {
+      display: flex; align-items: center;
+      justify-content: space-between;
+    }
+    .footer-in p {
+      font-size: 12px; color: rgba(255,255,255,.3);
+    }
+    .footer-in a {
+      font-size: 12px; color: rgba(255,255,255,.4);
+      transition: color .2s;
+    }
+    .footer-in a:hover { color: rgba(255,255,255,.8); }
+
+    /* ── RESPONSIVO ── */
+    @media (max-width: 860px) {
+      .hero-in { grid-template-columns: 1fr; }
+      .hero-photo-wrap { display: none; }
+      .stats-in { grid-template-columns: repeat(2, 1fr); }
+      .stat:nth-child(2) { border-right: none; }
+      .stat:nth-child(3) { border-top: 1px solid var(--border); }
+      .stat:nth-child(4) { border-top: 1px solid var(--border); border-right: none; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .blog-grid { grid-template-columns: repeat(2, 1fr); }
+      .contact-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+    @media (max-width: 580px) {
+      nav a:not(.nav-cta) { display: none; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .blog-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .edu-item { grid-template-columns: 1fr; }
+      .stats-in { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="container">
+      <div class="hd-in">
+        <a href="/" class="logo">Calixto<span>Neto</span></a>
+        <nav aria-label="Navegação principal">
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#formacao">Formação</a>
+          <a href="#blog">Artigos</a>
+          <a href="#contato" class="nav-cta">Fale comigo</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="sobre" aria-label="Apresentação">
+      <div class="container">
+        <div class="hero-in">
+          <div>
+            <p class="hero-badge">Marketing & Estratégia</p>
+            <h1>Calixto Neto,<br><em>o marketing que</em><br>gera resultado.</h1>
+            <p class="hero-sub">Analista Sênior · CRM · Dados · B2B</p>
+            <p class="hero-desc">
+              18+ anos transformando dados em decisões e campanhas em crescimento real.
+              Especialista em CRM, automação de marketing, mídia paga e geração de leads B2B —
+              com passagens por SEBRAE Mato Grosso e Sicredi. Baseado em Cuiabá, MT.
+            </p>
+            <div class="hero-actions">
+              <a href="#contato" class="btn btn-primary">Fale comigo →</a>
+              <a href="https://www.linkedin.com/in/calixtoneto/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+            </div>
+          </div>
+          <div class="hero-photo-wrap" aria-hidden="true">
+            <div class="hero-photo">
+              <!--
+                INSTRUÇÃO: Substitua o bloco abaixo por:
+                <img src="foto.jpg" alt="Calixto Neto" style="width:100%;height:100%;object-fit:cover;">
+                Coloque sua foto (foto.jpg) na mesma pasta do index.html
+              -->
+              <div class="photo-placeholder">
+                <span class="initials">CN</span>
+                <span class="hint">Coloque sua foto aqui</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STATS ── -->
+    <div class="stats" aria-label="Números de carreira">
+      <div class="container">
+        <div class="stats-in">
+          <div class="stat">
+            <p class="stat-num">18<span>+</span></p>
+            <p class="stat-label">Anos de experiência</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">B2B<span>·</span>B2C</p>
+            <p class="stat-label">Mercados atendidos</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">2<span>+</span></p>
+            <p class="stat-label">Pós-graduações</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">MT<span> BR</span></p>
+            <p class="stat-label">Cuiabá, Mato Grosso</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── HABILIDADES ── -->
+    <section class="skills-bg" id="habilidades" aria-label="Habilidades e ferramentas">
+      <div class="container">
+        <p class="sec-label">Competências</p>
+        <h2 class="sec-title">Habilidades & ferramentas</h2>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1A5CA8" stroke-width="2" stroke-linecap="round">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              </svg>
+            </div>
+            <h3>CRM & Automação</h3>
+            <div class="skill-tags">
+              <span class="stag">Salesforce Marketing Cloud</span>
+              <span class="stag">RD Station</span>
+              <span class="stag">Automação de fluxos</span>
+              <span class="stag">Segmentação</span>
+              <span class="stag">Lead scoring</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1A5CA8" stroke-width="2" stroke-linecap="round">
+                <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+            </div>
+            <h3>Mídia Paga & Performance</h3>
+            <div class="skill-tags">
+              <span class="stag">Google Ads</span>
+              <span class="stag">Meta Ads</span>
+              <span class="stag">LinkedIn Ads</span>
+              <span class="stag">CAC & ROAS</span>
+              <span class="stag">A/B Testing</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1A5CA8" stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Dados & Analytics</h3>
+            <div class="skill-tags">
+              <span class="stag">Google Analytics</span>
+              <span class="stag">Big Data</span>
+              <span class="stag">Marketing Intelligence</span>
+              <span class="stag">Dashboards</span>
+              <span class="stag">Excel avançado</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1A5CA8" stroke-width="2" stroke-linecap="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>Geração de Leads B2B</h3>
+            <div class="skill-tags">
+              <span class="stag">Inbound Marketing</span>
+              <span class="stag">Outbound</span>
+              <span class="stag">Nutrição de leads</span>
+              <span class="stag">Funil B2B</span>
+              <span class="stag">RevOps</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1A5CA8" stroke-width="2" stroke-linecap="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </div>
+            <h3>Experiência do Cliente</h3>
+            <div class="skill-tags">
+              <span class="stag">CX Strategy</span>
+              <span class="stag">NPS</span>
+              <span class="stag">Jornada do cliente</span>
+              <span class="stag">Pesquisa qualitativa</span>
+            </div>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#1A5CA8" stroke-width="2" stroke-linecap="round">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3>Estratégia & Planejamento</h3>
+            <div class="skill-tags">
+              <span class="stag">Marketing integrado</span>
+              <span class="stag">Posicionamento</span>
+              <span class="stag">Briefing</span>
+              <span class="stag">OKRs</span>
+              <span class="stag">Gestão de projetos</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FORMAÇÃO ── -->
+    <section class="edu-bg" id="formacao" aria-label="Formação acadêmica">
+      <div class="container">
+        <p class="sec-label">Educação</p>
+        <h2 class="sec-title">Formação acadêmica</h2>
+        <div class="edu-list">
+
+          <div class="edu-item">
+            <div>
+              <p class="edu-degree">Pós-graduação em Big Data & Marketing Intelligence</p>
+              <p class="edu-inst">PUC Paraná</p>
+              <p class="edu-desc">Especialização em análise de dados aplicada ao marketing, modelos preditivos e inteligência de mercado.</p>
+            </div>
+            <span class="edu-year">Pós-graduação</span>
+          </div>
+
+          <div class="edu-item">
+            <div>
+              <p class="edu-degree">Especialização em Marketing Integrado</p>
+              <p class="edu-inst">Universidade Federal de Mato Grosso — UFMT</p>
+              <p class="edu-desc">Gestão estratégica de marketing com visão integrada entre canais, marcas e públicos.</p>
+            </div>
+            <span class="edu-year">Especialização</span>
+          </div>
+
+          <div class="edu-item">
+            <div>
+              <p class="edu-degree">Bacharelado em Comunicação Social</p>
+              <p class="edu-inst">Universidade Federal de Mato Grosso — UFMT</p>
+              <p class="edu-desc">Formação base em comunicação, publicidade e relações com o mercado.</p>
+            </div>
+            <span class="edu-year">Graduação</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── BLOG / ARTIGOS ── -->
+    <section class="blog-bg" id="blog" aria-label="Artigos publicados">
+      <div class="container">
+        <p class="sec-label">Conteúdo</p>
+        <h2 class="sec-title">Artigos & publicações</h2>
+        <div class="blog-grid">
+
+          <!-- EDITE: adicione seus artigos reais aqui -->
+          <article class="blog-card">
+            <div class="blog-img">Imagem do artigo</div>
+            <div class="blog-body">
+              <span class="blog-tag">CRM</span>
+              <h3 class="blog-title">Como estruturar automação de CRM sem perder a personalização</h3>
+              <p class="blog-meta">Em breve</p>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img">Imagem do artigo</div>
+            <div class="blog-body">
+              <span class="blog-tag">Dados</span>
+              <h3 class="blog-title">CAC e LTV: os números que revelam a saúde do seu marketing</h3>
+              <p class="blog-meta">Em breve</p>
+            </div>
+          </article>
+
+          <article class="blog-card">
+            <div class="blog-img">Imagem do artigo</div>
+            <div class="blog-body">
+              <span class="blog-tag">B2B</span>
+              <h3 class="blog-title">Funil de vendas B2B: diagnóstico antes de gerar mais leads</h3>
+              <p class="blog-meta">Em breve</p>
+            </div>
+          </article>
+
+        </div>
+        <div class="blog-cta">
+          <a href="/artigos" class="btn btn-primary">Ver todos os artigos →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTATO ── -->
+    <section class="contact-bg" id="contato" aria-label="Contato">
+      <div class="container">
+        <div class="contact-inner">
+          <div>
+            <p class="sec-label">Contato</p>
+            <h2 class="sec-title">Vamos conversar?</h2>
+            <p class="contact-desc">
+              Aberto a projetos, oportunidades e conversas sobre marketing, dados e crescimento. Me manda uma mensagem — respondo sempre.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:calixtobneto@gmail.com" class="contact-link">
+                <div class="ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2" stroke-linecap="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                calixtobneto@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/calixtoneto/" target="_blank" rel="noopener" class="contact-link">
+                <div class="ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2" stroke-linecap="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                    <rect x="2" y="9" width="4" height="12"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </div>
+                linkedin.com/in/calixtoneto
+              </a>
+              <a href="#" class="contact-link">
+                <div class="ico">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2" stroke-linecap="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                Cuiabá, Mato Grosso — Brasil
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" action="mailto:calixtobneto@gmail.com" method="POST" enctype="text/plain" aria-label="Formulário de contato">
+            <div class="form-row">
+              <input type="text" name="nome" placeholder="Seu nome" required autocomplete="name" />
+              <input type="email" name="email" placeholder="Seu e-mail" required autocomplete="email" />
+            </div>
+            <input type="text" name="assunto" placeholder="Assunto" />
+            <textarea name="mensagem" placeholder="Sua mensagem..." required></textarea>
+            <button type="submit" class="btn btn-primary" style="align-self:flex-start">Enviar mensagem →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-in">
+        <p>© 2025 Calixto Neto. Todos os direitos reservados.</p>
+        <a href="https://www.linkedin.com/in/calixtoneto/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
